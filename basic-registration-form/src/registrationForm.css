@@ -1,0 +1,52 @@
+.registration-form--body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 220px;
+    background-color: white;
+    padding: 20px;
+    max-width: 430px;
+    border-radius: 4px;
+    box-shadow: 3px 4px 5px 1px rgba(97, 97, 97, 0.5),
+                -3px -4px 5px 1px rgba(97, 97, 97, 0.5);
+    padding-bottom: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-form--input {
+    width: 400px;
+    height: 49px;
+    margin-bottom: 20px;
+    border: 0;
+    background-color: rgb(244, 244, 244);
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.registration-form--submit {
+    margin-top: 20px;
+    border: 0;
+    height: 49px;
+    background-color:rgb(116, 208, 97);
+    color: white;
+    font-size: 20px;
+    transition: all ease-in-out 0.4s;
+}
+
+.registration-form--submit:hover {
+    cursor: pointer;
+    color: rgb(116, 208, 97);
+    background-color: white;
+    border: 2px solid rgb(116, 208, 97);;
+}
+
+.register-message {
+    margin-top: 40px;
+    color: rgb(17, 146, 17);
+    font-size: 20px;
+}
