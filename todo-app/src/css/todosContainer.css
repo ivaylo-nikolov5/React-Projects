@@ -1,0 +1,97 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 7rem;
+    max-width: 980px;
+    min-width: 600px;
+    padding: 1rem 2rem;
+    background-color: #123a65;
+    border: 7px solid #0b233d;
+    border-radius: 13px
+}
+
+.todosTitle {
+    margin-bottom: 0;
+    color: white;
+    font-family: 'Righteous', cursive;
+    font-size: 3rem;
+}
+
+.todosInputSection {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.todoText {
+    border: 0;
+    width: 600px;
+    height: 50px;
+    border-bottom-left-radius: 9px;
+    border-top-left-radius: 9px;
+    font-size: 1.4rem;
+    padding-left: 12px;
+    padding-right: 10px;
+    color: #10a3f5;
+    background-color: #0b233d;
+}
+
+.todoText:focus {
+    outline: none;
+}
+
+.addContainer {
+    display: flex;
+    align-items: center;
+    width: 55px;
+    background-color: white;
+    height: 52px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    background-color: #0b233d;
+
+}
+
+.addTodoBtn {
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background: rgb(130,180,213);
+    background: linear-gradient(90deg, rgba(130,180,213,1) 0%, rgba(29,203,253,1) 43%, rgba(69,149,252,1) 100%);    
+    border-radius: 14px;
+    
+}
+
+.addTodoBtn:hover {
+    transition: all ease-in-out 0.4s;
+    background: rgb(130,180,213);
+    background: linear-gradient(270deg, rgba(130,180,213,1) 0%, rgba(29,203,253,1) 43%, rgba(69,149,252,1) 100%);
+}
+
+.fa-plus {
+    margin-top: 2px;
+    font-size: 23px;
+} 
+
+.taskTypeSelection {
+    margin-left: 20px;
+}
+
+.options {
+    height: 50px;
+    width: 120px;
+    border-radius: 9px;
+    font-size: 0.9rem;
+    color: #10a3f5;
+    background-color: #0b233d;
+}
+
+.selectOption {
+    background-color: #0b233d;
+    padding: 15px;
+}
+
