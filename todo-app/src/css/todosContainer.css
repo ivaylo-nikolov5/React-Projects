@@ -1,6 +1,7 @@
 .mainContainer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin: auto;
     margin-top: 7rem;
@@ -11,8 +12,11 @@
     border: 7px solid #0b233d;
     border-radius: 13px
 }
-
+.titleContainer {
+    margin: auto;
+}
 .todosTitle {
+    justify-self: center;
     margin-bottom: 0;
     color: white;
     font-family: 'Righteous', cursive;
@@ -25,6 +29,7 @@
     align-content: center;
     align-items: center;
     margin-top: 80px;
+    margin-bottom: 4rem;
 }
 
 .todoText {
@@ -67,6 +72,7 @@
 }
 
 .addTodoBtn:hover {
+    cursor: pointer;
     transition: all ease-in-out 0.4s;
     background: rgb(130,180,213);
     background: linear-gradient(270deg, rgba(130,180,213,1) 0%, rgba(29,203,253,1) 43%, rgba(69,149,252,1) 100%);

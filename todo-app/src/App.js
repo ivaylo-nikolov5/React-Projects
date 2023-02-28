@@ -5,7 +5,7 @@ import "./css/general.css";
 function App() {
     return (
         <div>
-            <TodosContainer/>
+            <TodosContainer />
         </div>
     );
 }
