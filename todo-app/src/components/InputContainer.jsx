@@ -1,33 +1,43 @@
 import React from 'react'
 import "../css/todosContainer.css";
 
-const InputContainer = () => {
+const InputContainer = (props) => {
+    const [taskText, setTaskText] = React.useState("");
+
+    function handleChange(event) {
+        setTaskText(() => event.target.value);
+    }
+
     return (
         <div className='todosInputSection'>
                 <input 
                     placeholder='Enter a task...'
                     className='todoText'
+                    name='todoText'
+                    value={taskText}
+                    onChange={handleChange}
                 />
                 <div className='addContainer'>
                     <button
                         className='addTodoBtn'
-                    ><i class="fa fa-solid fa-plus"></i>
+                        onClick={() => {props.handleAdd(taskText, setTaskText)}}
+                    ><i className="fa fa-solid fa-plus"></i>
                     </button>
                 </div>
 
-                <div className='taskTypeSelection'>   
-                    <select className='options'>
+                <div className='taskTypeSelection' >   
+                    <select className='options' onChange={props.changeFilter}>
                         <option 
+                        value="All"
                         className='selectOption'
-                        value=""
                         >All</option>
                         <option 
+                        value="Completed"
                         className='selectOption'
-                        value=""
                         >Completed</option>
                         <option 
+                        value="Not Completed"
                         className='selectOption'
-                        value=""
                         >Not Completed</option>
                     </select>
                 </div>

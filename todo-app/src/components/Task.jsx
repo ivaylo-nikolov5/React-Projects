@@ -1,23 +1,25 @@
 import React from 'react'
 import "../css/task.css"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const Task = () => {
+const Task = (props) => {
+    console.log(props);
     return (
         <div className='taskContainer'>
             <div className='taskBody'>
                 <p className='taskText'>
-                    text task
+                    {props.text}
                 </p>
             </div>
 
             <div className='todoControls'>
-                <button
-                    className="finishTask"
-                ><i class="fa sharp fa-solid fa-check"></i>
-                </button>
+                {!props.completed && <button
+                        className="finishTask"
+                        onClick={() => props.completeTask(props.k)}
+                        ><i className="fa sharp fa-solid fa-check"></i>
+                    </button>}
                 <button
                     className="deleteTask"
+                    onClick={() => props.deleteTask(props.k)}
                 >
                     x
                 </button>
