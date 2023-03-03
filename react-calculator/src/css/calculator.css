@@ -13,3 +13,24 @@
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(24,245,16,1) 57%, rgba(252,69,69,1) 84%);
 }
+
+.buttonsContainer {
+    display: flex;
+}
+
+.clearButton {
+    width: 400px;
+    height: 55px;
+    background-color: rgb(255, 76, 27);
+    color: white;
+    border: 1px solid gray;
+    font-size: 2rem;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all ease-in-out 0.35s;
+}
+
+.clearButton:hover {
+    cursor: pointer;
+    background-color: rgb(144, 0, 0);
+}
