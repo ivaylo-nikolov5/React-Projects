@@ -1,0 +1,12 @@
+.display-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: black;
+    width: 400px;
+    height: 60px;
+    font-size: 1.9rem;
+    color: white;
+    padding-right: 10px;
+    border-radius: 5px;
+}

@@ -1,0 +1,15 @@
+.calculatorBodyContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 17vh;
+    max-width: 400px;
+    padding: 30px 20px;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(24,245,16,1) 57%, rgba(252,69,69,1) 84%);
+}
