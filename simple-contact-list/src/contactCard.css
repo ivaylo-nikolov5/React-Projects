@@ -1,0 +1,60 @@
+.contactCardContainer {
+    display: flex;
+    max-width: 650px;
+    align-content: center;
+    margin: 0;
+    margin-top: 30px;
+    width: 690px;
+    padding: 20px 20px;
+    background-color: rgb(5, 86, 49);
+    border-radius: 5px;
+}
+
+.contactImage {
+    width: 180px;
+    border-radius: 5px;
+}
+
+.contactInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20px;
+    color: white;
+    font-size: 1.34em;
+}
+
+.contactInfo p {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.showHideAgeBtn {
+    width: 110px;
+    height: 25px;
+    font-size: 1rem;
+    background-color: white;
+    border: 0;
+    border-radius: 3px;
+    transition: all ease-in-out 0.3s;
+    margin-right: 20px;
+}
+
+.showHideAgeBtn:hover {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+.showHideAgeBtn:active {
+    transition: all ease-in-out 0s;
+    background-color: rgb(72, 72, 72);
+}
+
+.ageInfo {
+    display: flex;
+}
+
+.age {
+    margin: 0;
+}
