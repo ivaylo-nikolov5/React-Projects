@@ -24,6 +24,7 @@ const Searchbar = (props) => {
                     className='searchBox'
                     value={searchData}
                     onChange={handleChange}
+                    placeholder="Type an ingredient..."
                 />
                 <button
                     className='searchBtn'
