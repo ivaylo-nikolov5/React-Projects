@@ -1,6 +1,7 @@
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import React from 'react'
 import "../css/shoppingListContainer.css"
+import Item from './Item'
 
 const ShoppingListContainer = () => {
     return (
@@ -13,6 +14,10 @@ const ShoppingListContainer = () => {
                     ><i class="fa-solid fa-plus"></i></button>
                 </div>
             </div>
+
+           <div className='itemsList'>
+                <Item />
+           </div>
         </div>
     )
 }

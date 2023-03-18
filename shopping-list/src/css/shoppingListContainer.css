@@ -27,8 +27,6 @@
     font-size: 1.2rem;
     background-color: rgb(135, 178, 195);
     color: rgb(1, 74, 103);
-    
-
 }
 
 .listInput::placeholder {
@@ -48,7 +46,7 @@
     background-color: white;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-color: rgb(135, 178, 195)
+    background-color: rgb(135, 178, 195);
 }
 
 .listAddBtn:hover {
@@ -68,4 +66,8 @@
 .fa-plus:active {
 
     scale: 2.2;
+}
+
+.itemsList {
+    margin-top: 30px;
 }

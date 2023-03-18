@@ -1,0 +1,61 @@
+.itemContainer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: rgb(1, 74, 103);
+    color: white;
+    margin-top: 10px;
+    padding: 10px 0px;
+    border-bottom: 1px solid rgb(135, 178, 195);
+}
+
+.itemCheck {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: white;
+}
+
+.itemCheck:checked::before {
+    content: "\2713";
+    display: block;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.itemName {
+    margin: 0;
+    margin-left: 5px;
+    font-size: 1.3rem;       
+}
+
+.quantityChanger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 22px;
+    color: rgb(1, 74, 103);
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    margin-left:auto;
+}
+
+.itemQuantity {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 1.5rem;
+}
+
+.fa-less-than,
+.fa-greater-than {
+    scale: 1.1;
+    padding: 3px;
+}
