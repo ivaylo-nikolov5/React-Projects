@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    background-color: rgb(1, 8, 25);
+    font-family: 'PT Sans', sans-serif;
+}
+
+.appContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.pageTitle {
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 2px;
+
+}
