@@ -1,0 +1,15 @@
+.searchbar {
+    margin-top: 20px;
+    width: 320px;
+    height: 50px;
+    border: 0;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    padding-left: 10px;
+    color: rgb(25, 47, 55);
+}
+
+.searchbar:focus {
+    border: 0;
+    outline: 0;
+}
