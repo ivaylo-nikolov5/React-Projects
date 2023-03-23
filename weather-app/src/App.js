@@ -1,4 +1,5 @@
 import React from "react";
+import DegreesDisplay from "./components/DegreesDisplay";
 import LocationAndDate from "./components/LocationAndDate";
 import Searchbar from "./components/Searchbar";
 import "./css/general.css";
@@ -12,6 +13,7 @@ function App() {
         <div className="appContainer">
             <Searchbar />
             <LocationAndDate />
+            <DegreesDisplay />
         </div>
     );
 }
