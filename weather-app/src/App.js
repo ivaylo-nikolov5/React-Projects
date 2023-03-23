@@ -1,4 +1,5 @@
 import React from "react";
+import LocationAndDate from "./components/LocationAndDate";
 import Searchbar from "./components/Searchbar";
 import "./css/general.css";
 const api = {
@@ -10,6 +11,7 @@ function App() {
     return (
         <div className="appContainer">
             <Searchbar />
+            <LocationAndDate />
         </div>
     );
 }

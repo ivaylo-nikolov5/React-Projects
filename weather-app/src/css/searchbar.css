@@ -7,6 +7,7 @@
     font-size: 1.3rem;
     padding-left: 10px;
     color: rgb(25, 47, 55);
+    box-shadow: 2px 2px 3px grey;
 }
 
 .searchbar:focus {
