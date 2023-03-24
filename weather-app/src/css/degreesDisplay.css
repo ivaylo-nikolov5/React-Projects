@@ -1,13 +1,14 @@
 .degreesDisplayContainer {
     display: flex;
     margin-top: 50px;
-    width: 230px;
+    width: 250px;
     height: 120px;
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(34, 34, 34, 0.5);
     border-radius: 20px;
+    text-shadow: 2px 2px 4px rgba(9, 9, 9, 0.7)
     
 
 }

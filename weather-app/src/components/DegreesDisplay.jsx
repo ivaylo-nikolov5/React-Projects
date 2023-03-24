@@ -1,10 +1,10 @@
 import React from 'react'
 import "../css/degreesDisplay.css";
 
-const DegreesDisplay = () => {
+const DegreesDisplay = (props) => {
     return (
         <div className='degreesDisplayContainer'>
-            <h1>29°C</h1>
+            <h1>{props.temp}°C</h1>
         </div>
     )
 }
