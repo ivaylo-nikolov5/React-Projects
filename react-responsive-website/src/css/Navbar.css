@@ -67,3 +67,115 @@
     transition: all ease-in-out 0.1s;
     scale: 0.98;
 }
+
+.burgerMenu {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .navbarContainer {
+        display: flex;
+        background-color: black;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    
+    .logoImage {
+        max-width: 200px;
+        max-height: 100px;
+        padding: 15px;
+    }
+    
+    .navMenuContainer {
+        display: none;
+    }
+    .homeBtn,
+    .servicesBtn,
+    .productsBtn {
+       background-color: black;
+       border-radius: 0;
+       width: 100%;
+       padding: 30px 0px;
+    }
+    
+
+    
+    .signUpBtn {
+        display: none;
+    }
+    
+    .signUpBtn:hover {
+    }
+    
+    .signUpBtn:active {
+    }
+
+    .burgerMenu {
+        display: block;
+        margin-left: auto;
+        margin-right: 30px;
+    }
+
+    .responsiveSignUpBtn {
+        height: 70px;
+        font-size: 1.5rem;
+        background-color: white;
+        border: 0;
+        transition: all ease-in-out 0.3s;
+    }
+
+    .responsiveSignUpBtn:hover {
+        color: white;
+        background-color: black;
+    }
+
+    .responsiveSignUpBtn:active {
+        font-size: 1.4rem;
+    }
+
+    .fa-x {
+        color: white;
+        scale: 2;
+        transition: all ease-in-out 0.3s;
+        margin-right: 2px;
+    }
+
+    .fa-bars {
+        color: white;
+        scale: 2;
+        transition: all ease-in 0.3s;
+        margin-right: 2px;
+    }
+
+    .slideIn,
+    .slideOut {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 61.594px;
+        position: fixed;
+        width: 100%;
+        transition: all ease-in-out 0.5s;
+        border-top: 1px solid white;
+    
+    }
+
+    .slideIn {
+        animation-name: slide-in;
+        animation-duration: 0.7s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: both;
+    }
+      
+    @keyframes slide-in {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+    }
+
+}
