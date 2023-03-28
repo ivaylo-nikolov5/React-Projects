@@ -2,10 +2,10 @@
     display: flex;
     background-color: black;
     align-items: center;
-    position: fixed;
+    position: relative;
     top: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 10;
 }
 
 .logoImage {
@@ -96,10 +96,10 @@
     .homeBtn,
     .servicesBtn,
     .productsBtn {
-       background-color: black;
-       border-radius: 0;
-       width: 100%;
-       padding: 30px 0px;
+        background-color: black;
+        border-radius: 0;
+        width: 100%;
+        padding: 30px 0px;
     }
     
 
@@ -145,8 +145,7 @@
         margin-right: 2px;
     }
 
-    .slideIn,
-    .slideOut {
+    .slideIn {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -155,7 +154,8 @@
         width: 100%;
         transition: all ease-in-out 0.5s;
         border-top: 1px solid white;
-    
+        position: absolute;
+        z-index: 5;
     }
 
     .slideIn {
