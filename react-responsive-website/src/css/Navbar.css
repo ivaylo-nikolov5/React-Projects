@@ -5,12 +5,14 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 100;
 }
 
 .logoImage {
     max-width: 300px;
     max-height: 150px;
     padding: 20px;
+    cursor: pointer;
 }
 
 .navMenuContainer {
@@ -104,12 +106,6 @@
     
     .signUpBtn {
         display: none;
-    }
-    
-    .signUpBtn:hover {
-    }
-    
-    .signUpBtn:active {
     }
 
     .burgerMenu {
