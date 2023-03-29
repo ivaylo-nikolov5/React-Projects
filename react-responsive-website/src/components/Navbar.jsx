@@ -1,6 +1,6 @@
 import { React, useState } from 'react'
 import "../css/Navbar.css"
-import DropMenu from './DropMenu';
+import DropMenu from './smallComponents/DropMenu';
 
 const Navbar = () => {
     const [clicked, setClicked] = useState(false);
@@ -12,7 +12,7 @@ const Navbar = () => {
     return (
         <div>
             <div className='navbarContainer'>
-                <img src="./logo.png" alt=""  className='logoImage'/>
+                <img src="./images/logo.png" alt=""  className='logoImage'/>
                 <div className='navMenuContainer'>
                     <button
                         className='homeBtn'
