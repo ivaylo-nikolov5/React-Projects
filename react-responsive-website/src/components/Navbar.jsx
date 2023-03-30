@@ -26,7 +26,8 @@ const Navbar = () => {
                 </div>
                 <button
                     className='signUpBtn'
-                >Sign Up</button>
+                >Sign Up
+                </button>
                 <div 
                     onClick={changeClicked}
                     className="burgerMenu"

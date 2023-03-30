@@ -61,6 +61,15 @@
     font-size: 4rem;
     margin-left: 50px;
     margin-right: 50px;
+    transition: all ease-in-out 0.3s;
+}
+
+.fa-computer:hover,
+.fa-laptop:hover,
+.fa-mobile:hover,
+.fa-tablet:hover,
+.fa-server:hover {
+    color: rgb(0, 160, 208);
 }
 
 .engeneerImages, 
@@ -81,12 +90,20 @@
     transition: all ease-in-out 0.5s;
 }
 
+.descriptionEngeneerImage:hover {
+    scale: 1.1;
+}
+
 .serviceImage {
     max-width: 200px;
     margin-left: 20px;
     margin-right: 20px;
     border-radius: 10px;
     transition: all ease-in-out 0.5s;
+}
+
+.serviceImage:hover {
+    scale: 1.1;
 }
 
 .greeting,

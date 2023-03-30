@@ -1,0 +1,121 @@
+.footerContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Ubuntu", sans-serif;
+    background-color: rgb(60, 60, 60);
+}
+
+.footerContainer hr {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 75%;
+}
+
+.footerBottomSection {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.footerLogo {
+    margin-right: auto;   
+    scale: 0.5;
+}
+
+.footerSignUpBtn {
+    margin-right: 100px;
+    width: 100px;
+    height: 35px;
+    border: 0;
+    background-color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all ease-in-out 0.3s;
+}
+
+.footerSignUpBtn:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    scale: 1.01;
+}
+
+.footerTopSection {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    width: 100%;
+}
+
+.socialMedias {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+}
+
+.socialIcons {
+    display: flex;
+}
+
+.topInfo {
+    display: flex;
+    margin-left: auto;
+    margin-right: 200px;
+}
+
+.infoSection {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.socialMedias p {
+    font-size: 1.5rem;
+}
+
+.fa-youtube,
+.fa-instagram,
+.fa-facebook,
+.fa-twitter {
+    scale: 2;
+    margin-left: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.fa-twitter:hover {
+    color: rgb(0, 160, 208);
+    transform: translateY(-3px);
+}
+
+.fa-youtube:hover {
+    color: red;
+    transform: translateY(-3px);
+}
+
+.fa-instagram:hover {
+   color: rgb(240, 66, 66);
+   transform: translateY(-3px);
+}
+.fa-facebook:hover {
+    color: rgb(64, 139, 225);
+    transform: translateY(-3px);
+}
+
+.infoMain {
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.infoContent:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
