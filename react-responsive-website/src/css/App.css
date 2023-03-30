@@ -4,3 +4,29 @@ body {
   height: 1000px;
   color: white;
 }
+
+.sectionDelimiter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 0;
+}
+
+.leftLine {
+  margin: 0;
+  margin-right: 10px;
+  width: 40%;
+}
+
+.rightLine {
+  margin: 0;
+  margin-left: 10px;
+  width: 40%;
+}
+
+.fa-microchip {
+  scale: 2;
+  margin-right: 10px;
+  margin-left: 10px;
+}
