@@ -77,14 +77,25 @@
     max-width: 400px;
     margin-left: 20px;
     margin-right: 20px;
-    border-radius: 10px
+    border-radius: 10px;
+    transition: all ease-in-out 0.5s;
 }
 
 .serviceImage {
     max-width: 200px;
     margin-left: 20px;
     margin-right: 20px;
-    border-radius: 10px
+    border-radius: 10px;
+    transition: all ease-in-out 0.5s;
+}
+
+.greeting,
+.startText,
+.descriptionText3,
+.thanks {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
 }
 
 @media (max-width: 1435px) {
@@ -98,6 +109,154 @@
         margin-left: 10px;
         margin-right: 10px;
         margin-bottom: 20px;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 1435px) {
+    .descriptionEngeneerImage {
+        max-width: 300px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 1039px) {
+    .greeting {
+        font-size: 2.9rem;
+    }
+
+    .startText {
+        font-size: 1.4rem;
+    }
+
+    .descriptionText1,
+    .descriptionText2,
+    .descriptionText3 {
+        max-width: 700px;
+    }
+
+    .fa-computer,
+    .fa-laptop,
+    .fa-mobile,
+    .fa-tablet,
+    .fa-server {
+        font-size: 2.7rem;
+        margin-top: -20px;
+        margin-bottom: -20px;
+    }
+
+    .servicesImages {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .engeneerImages {
+        flex-direction: column;
+    }
+
+    .descriptionEngeneerImage {
+        max-width: 450px;
+        margin-bottom: 20px;
+    }
+
+    .thanks {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 600px) {
+    .fa-screwdriver-wrench {
+        scale: 2;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .descriptionLogo {
+        max-width: 350px;
+        margin-top: 35px;
+        margin-bottom: 35px;
+        box-shadow: inset 0px -5px 5px -5px rgba(255, 255, 255, 0.3);
+        box-shadow: inset 0px -5px 5px -5px rgba(255, 255, 255, 0.3);
+    }
+    
+    .greeting {
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
+    
+    .startText {
+        margin-top: 10px;
+        text-decoration: underline;
+    }
+    
+    .descriptionText1,
+    .descriptionText2,
+    .descriptionText3 {
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: 450px;
+        line-height: 150%;
+    }
+    
+    .descriptionIcons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .fa-computer,
+    .fa-laptop,
+    .fa-mobile,
+    .fa-tablet,
+    .fa-server {
+        font-size: 2rem;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    
+    .engeneerImages, 
+    .servicesImages {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .descriptionEngeneerImage {
+        max-width: 300px;
+    }
+    
+    .serviceImage {
+        max-width: 200px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 10px;
+        transition: all ease-in-out 0.5s;
+    }
+    
+
+}
+
+@media (max-width: 450px) {
+    .fa-screwdriver-wrench {
+        scale: 1.6;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .descriptionLogo {
+        max-width: 250px;
+        margin-top: 35px;
+        margin-bottom: 35px;
+        box-shadow: inset 0px -5px 5px -5px rgba(255, 255, 255, 0.3);
+        box-shadow: inset 0px -5px 5px -5px rgba(255, 255, 255, 0.3);
+    }
+    
+    .serviceImage {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 

@@ -2,7 +2,7 @@
     display: flex;
     background-color: black;
     align-items: center;
-    position: relative;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 10;
