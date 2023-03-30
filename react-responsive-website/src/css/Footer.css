@@ -119,3 +119,57 @@
     text-decoration: underline;
     cursor: pointer;
 }
+
+@media (max-width: 1140px) {
+    .socialMedias {
+        margin-left: 50px;
+        font-size: 0.8rem;
+    }
+
+    .socialMedias p {
+        font-size: 1.2rem;
+    }
+
+    .topInfo {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .topInfo {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(2, 2fr);
+    }
+    .infoMain {
+        font-size: 1.3rem;
+    }
+
+    .infoContent {
+        font: 0.5rem;
+    }
+
+    .socialIcons {
+        flex-direction: column;
+        margin-right: 40px;
+    }
+
+    .fa-youtube,
+    .fa-instagram,
+    .fa-facebook,
+    .fa-twitter {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .footerLogo {
+        margin-left: -80px;
+        margin-right: -10px;
+    }
+
+    .footerSignUpBtn {
+        margin-left: -50px;
+        margin-right: 10px;
+    }
+} 
