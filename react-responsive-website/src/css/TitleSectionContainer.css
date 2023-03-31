@@ -161,9 +161,6 @@
 }
 
 @media (max-width: 800px) {
-    .titleSection {
-        width: 100%;
-    }
 
     .titleContainer {
         top: 25vh;
@@ -193,7 +190,6 @@
     }
 
     .bgVideo {
-        width: 138%;
         height: 50vh;
     }
 }

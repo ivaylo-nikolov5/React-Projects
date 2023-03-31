@@ -6,6 +6,7 @@
     align-items: center;
     font-family: "Ubuntu", sans-serif;
     background-color: rgb(60, 60, 60);
+    box-shadow: 3px -3px 8px rgb(93, 93, 93);
 }
 
 .footerContainer hr {
@@ -24,6 +25,7 @@
 .footerLogo {
     margin-right: auto;   
     scale: 0.5;
+    cursor: pointer;
 }
 
 .footerSignUpBtn {
@@ -164,12 +166,18 @@
     }
 
     .footerLogo {
-        margin-left: -80px;
         margin-right: -10px;
     }
 
     .footerSignUpBtn {
-        margin-left: -50px;
-        margin-right: 10px;
+        margin-right: 0;
+    }
+
+    .footerBottomSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     }
 } 
