@@ -17,12 +17,14 @@ body {
   margin: 0;
   margin-right: 10px;
   width: 40%;
+  background-color: white;
 }
 
 .rightLine {
   margin: 0;
   margin-left: 10px;
   width: 40%;
+  background-color: white;
 }
 
 .fa-microchip {

@@ -14,6 +14,10 @@ const MainPage = () => {
             
             <SectionDelimiter />
 
+            <div className='toScroll'>
+
+            </div>
+
             <DescriptionSection />
 
             <SectionDelimiter/>
