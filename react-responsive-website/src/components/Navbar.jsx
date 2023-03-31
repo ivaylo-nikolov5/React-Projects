@@ -1,6 +1,7 @@
 import { React, useState } from 'react'
 import "../css/Navbar.css"
 import DropMenu from './smallComponents/DropMenu';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [clicked, setClicked] = useState(false);
@@ -20,13 +21,13 @@ const Navbar = () => {
                     />
                 </a>
                 <div className='navMenuContainer'>
-                    <button
+                    <button to="/"
                         className='homeBtn'
                     >Home</button>
-                    <button
+                    <button to="/services"
                         className='servicesBtn'
                     >Services</button>
-                    <button
+                    <button to="products"
                         className='productsBtn'
                     >Products</button>
                 </div>
