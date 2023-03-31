@@ -7,15 +7,18 @@ import SectionDelimiter from '../components/smallComponents/SectionDelimiter';
 import Footer from '../components/Footer';
 
 const MainPage = () => {
+    
+
     return (
         <div>
             <Navbar />
             <TitleSection />
             
             <SectionDelimiter />
+            
+            <div className='toScroll'></div>
 
             <DescriptionSection />
-
             <SectionDelimiter/>
 
             <Footer />

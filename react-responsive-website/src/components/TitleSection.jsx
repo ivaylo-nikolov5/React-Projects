@@ -1,7 +1,7 @@
 import React from 'react'
 import "../css/TitleSectionContainer.css";
 import video from "../videos/bgVideo.mp4"
-
+import { Link } from 'react-scroll';
 
 
 const TitleSection = () => {
@@ -24,9 +24,13 @@ const TitleSection = () => {
                         <button className='productsTitleBtn'>Products</button>
                     </div>
                     <p className='descriptionRedirecterText'>MORE INFORMATION ABOUT US</p>
-                    <div className='descriptionRedicrecter'>
-                        <i class="fa-solid fa-arrow-down"></i>
-                    </div>
+                    
+                    <Link to="toScroll" smooth={true} duration={1000}>
+                        <div className='descriptionRedicrecter'>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+                    </Link>
+                    
                 </div>
             </div>
         </div>
