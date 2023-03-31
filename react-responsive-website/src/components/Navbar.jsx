@@ -12,7 +12,13 @@ const Navbar = () => {
     return (
         <div>
             <div className='navbarContainer'>
-                <img src="./images/logo.png" alt=""  className='logoImage'/>
+                <a href="index.html">
+                    <img src="./images/logo.png" 
+                        alt=""  
+                        className='logoImage'
+                        
+                    />
+                </a>
                 <div className='navMenuContainer'>
                     <button
                         className='homeBtn'

@@ -153,6 +153,7 @@
         width: 100%;
         transition: all ease-in-out 0.5s;
         border-top: 1px solid white;
+        background-color: black;
         z-index: 5;
     }
 
