@@ -13,7 +13,7 @@ const Navbar = () => {
     return (
         <div>
             <div className='navbarContainer'>
-                <a href="index.html">
+                <a href="/">
                     <img src="./images/logo.png" 
                         alt=""  
                         className='logoImage'
@@ -21,15 +21,23 @@ const Navbar = () => {
                     />
                 </a>
                 <div className='navMenuContainer'>
-                    <button to="/"
-                        className='homeBtn'
-                    >Home</button>
-                    <button to="/services"
-                        className='servicesBtn'
-                    >Services</button>
-                    <button to="products"
-                        className='productsBtn'
-                    >Products</button>
+                    <Link to="/">
+                        <button
+                            className='homeBtn'
+                        >Home</button>
+                    </Link>
+                    <Link to="/services">
+                        <button to="/services"
+                            className='servicesBtn'
+                        >Services</button>
+                    </Link>
+                    
+                    <Link to="/products">
+                        <button to="/products"
+                            className='productsBtn'
+                        >Products</button>
+                    </Link>
+                    
                 </div>
                 <button
                     className='signUpBtn'

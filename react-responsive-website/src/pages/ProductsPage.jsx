@@ -1,11 +1,13 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
 
 const ProductsPage = () => {
-  return (
-    <div>
-        products
-    </div>
-  )
+    return (
+      <div>
+          <Navbar/>
+          products
+      </div>
+    )
 }
 
 export default ProductsPage

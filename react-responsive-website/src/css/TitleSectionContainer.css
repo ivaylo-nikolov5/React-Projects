@@ -65,6 +65,7 @@
     border-radius: 50px;
     cursor: pointer;
     transition: width ease-in-out 1s;
+    outline: 0;
 }
 
 .servicesTitleBtn {
@@ -156,6 +157,7 @@
         width: 150px;
         margin-left: 10px;
         margin-right: 10px;
+        border: 0;
     }
     
 }
@@ -183,6 +185,7 @@
         width: 120px;
         margin-left: 10px;
         margin-right: 10px;
+        border: 0;
     }
 
     .descriptionRedicrecter {

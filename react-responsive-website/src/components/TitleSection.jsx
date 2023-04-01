@@ -1,7 +1,8 @@
 import React from 'react'
 import "../css/TitleSectionContainer.css";
 import video from "../videos/bgVideo.mp4"
-import { Link } from 'react-scroll';
+import ScrollArrow from './smallComponents/ScrollArrow';
+import { Link } from 'react-router-dom';
 
 
 const TitleSection = () => {
@@ -20,17 +21,17 @@ const TitleSection = () => {
                     <h1 className='title'><span className='name'>FTPC</span> Computer Service Ltd.</h1>
                     <p className='slogan'>Computer problems? We've got the solution!</p>
                     <div className='titleButtons'>
-                        <button className='servicesTitleBtn'>Services</button>
-                        <button className='productsTitleBtn'>Products</button>
+                        <Link to="/services">
+                            <button className='servicesTitleBtn'>Services</button>
+                        </Link>
+                        <Link to="/products">
+                            <button className='productsTitleBtn'>Products</button>
+                        </Link>
+                        
                     </div>
                     <p className='descriptionRedirecterText'>MORE INFORMATION ABOUT US</p>
                     
-                    <Link to="toScroll" smooth={true} duration={1000}>
-                        <div className='descriptionRedicrecter'>
-                            <i class="fa-solid fa-arrow-down"></i>
-                        </div>
-                    </Link>
-                    
+                    <ScrollArrow/>
                 </div>
             </div>
         </div>
