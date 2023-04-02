@@ -1,11 +1,21 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
+import ServicesMain from "../components/ServicesMain";
+import "../css/Services.css"
+import SectionDelimiter from '../components/smallComponents/SectionDelimiter';
+import ServiceCard from '../components/ServiceCard';
 
 const ServicesPage = () => {
     return (
-        <div>
+        <div className='servicesPageContainer'>
             <Navbar />
-            services
+            <ServicesMain/>
+
+            <SectionDelimiter />
+
+            <div className='servicesContainer'>
+                <ServiceCard />
+            </div>
         </div>
     )
 }

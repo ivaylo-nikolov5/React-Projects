@@ -1,0 +1,16 @@
+.servicesTitleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 81.078px;
+}
+
+.servicesPageContainer .sectionDelimiter{
+    margin-top: 50px;
+}
+
+.servicesTitle {
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
