@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 import ServicesMain from "../components/ServicesMain";
 import "../css/Services.css"
 import SectionDelimiter from '../components/smallComponents/SectionDelimiter';
-import ServiceCard from '../components/ServiceCard';
+import ServicesSection from '../components/ServicesSection';
 
 const ServicesPage = () => {
     return (
@@ -13,9 +13,7 @@ const ServicesPage = () => {
 
             <SectionDelimiter />
 
-            <div className='servicesContainer'>
-                <ServiceCard />
-            </div>
+            <ServicesSection />
         </div>
     )
 }

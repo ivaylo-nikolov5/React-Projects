@@ -1,3 +1,9 @@
+.servicesPageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .servicesTitleContainer {
     display: flex;
     flex-direction: column;
@@ -5,7 +11,7 @@
     margin-top: 81.078px;
 }
 
-.servicesPageContainer .sectionDelimiter{
+.servicesPageContainer .sectionDelimiter {
     margin-top: 50px;
 }
 
@@ -14,3 +20,10 @@
     margin-bottom: 0;
 }
 
+.serviceSectionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}

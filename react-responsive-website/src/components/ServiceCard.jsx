@@ -1,6 +1,7 @@
 import React from 'react'
+import "../css/ServiceCard.css";
 
-const ServiceCard = () => {
+const ServiceCard = (props) => {
     return (
         <div className='serviceCardContainer'>
             
