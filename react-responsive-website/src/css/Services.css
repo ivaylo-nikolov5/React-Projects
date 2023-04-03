@@ -27,3 +27,16 @@
     align-items: center;
     margin-top: 40px;
 }
+
+.servicesContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 25px;
+    row-gap: 25px;
+    margin-top: 25px;
+}
+
+.space {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

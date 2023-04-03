@@ -1,0 +1,30 @@
+.serviceCardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 17px;
+    border-radius: 10px;
+    background-color: rgb(39, 39, 39);
+    box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.696);
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.serviceCardContainer:hover {
+    scale: 1.01;
+    box-shadow: 3px 3px 7px rgba(128, 128, 128, 0.696);
+}
+
+.serviceCardImage {
+    max-width: 320px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.serviceCardText {
+    font-size: 1.4rem;
+    max-width: 320px;
+    text-align: center;
+}
