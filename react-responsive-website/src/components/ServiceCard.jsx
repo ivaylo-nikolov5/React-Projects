@@ -1,9 +1,11 @@
 import React from 'react'
 import "../css/ServiceCard.css";
+import { Link } from 'react-router-dom';
+
 
 const ServiceCard = (props) => {
     return (
-        <div className='serviceCardContainer'>
+        <Link to={`/services/${props.url}`} className='serviceCardContainer'>
             <img 
                 src={props.image} 
                 alt="" 
@@ -11,7 +13,7 @@ const ServiceCard = (props) => {
             <h2
                 className='serviceCardText'
             >{props.text}</h2>
-        </div>
+        </Link>
     )
 }
 
