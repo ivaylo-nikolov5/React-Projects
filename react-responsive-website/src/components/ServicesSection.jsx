@@ -1,8 +1,6 @@
 import React from 'react'
 import ServiceCard from "../components/ServiceCard";
 import "../css/Services.css"; 
-import { Routes, Route } from 'react-router-dom';
-import ServiceTemplate from '../pages/templates/ServiceTemplate';
 
 const ServicesSection = (props) => {
     const services = props.services;
