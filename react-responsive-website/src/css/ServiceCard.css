@@ -15,6 +15,7 @@
 .serviceCardContainer:hover {
     scale: 1.01;
     box-shadow: 3px 3px 7px rgba(128, 128, 128, 0.696);
+    text-decoration: none;
 }
 
 .serviceCardImage {
@@ -24,6 +25,7 @@
 }
 
 .serviceCardText {
+    color: white;
     font-size: 1.4rem;
     max-width: 320px;
     text-align: center;

@@ -2,6 +2,7 @@ import { React, useState } from 'react'
 import "../css/Navbar.css"
 import DropMenu from './smallComponents/DropMenu';
 import { Link } from 'react-router-dom';
+import logo from "../data/logo.png";
 
 const Navbar = () => {
     const [clicked, setClicked] = useState(false);
@@ -14,8 +15,8 @@ const Navbar = () => {
         <div>
             <div className='navbarContainer'>
                 <a href="/">
-                    <img src="./images/logo.png" 
-                        alt=""  
+                    <img src={logo}   
+                        alt=""
                         className='logoImage'
                         
                     />

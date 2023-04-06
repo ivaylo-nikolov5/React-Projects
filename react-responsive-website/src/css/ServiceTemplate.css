@@ -1,0 +1,71 @@
+.serviceTemplateContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.serviceTemplateTitleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: -100px;
+    transition: all ease-in-out 0.3s;
+}
+
+.serviceTemplateTitleContainer .fa-wrench {
+    font-size: 1.8rem;
+    margin-left: 10px;
+    transition: all ease-in-out 0.3s;
+}
+
+.fa-wrench:hover {
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.serviceTemplateInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.serviceTemplateInfoText {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+    text-align: center;
+    max-width: 83%;
+    transition: all ease-in-out 0.3s;
+}
+
+.serviceTemplateInfoImages {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    align-items: center;
+}
+
+.serviceTemplateInfoImage {
+    border-radius: 20px;
+    max-width: 500px;
+    box-shadow: 3px 3px 15px white;
+    transition: all ease-in-out 0.3s;
+}
+
+.serviceTemplateInfoImage:hover {
+    box-shadow: 4px 4px 17px white;
+    scale: 1.01;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

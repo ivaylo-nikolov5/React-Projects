@@ -20,6 +20,7 @@
     margin-right: 45px;
     font-family: 'Ubuntu', sans-serif;
 }
+
 .homeBtn,
 .servicesBtn,
 .productsBtn {
@@ -27,7 +28,7 @@
     border: 0;
     color: white;
     background-color: transparent;
-    font-size: 1.3rem;   
+    font-size: 1.3rem;
     transition: all ease-in-out 0.3s;
     cursor: pointer;
     padding: 15px 10px;
@@ -83,13 +84,11 @@
         top: 0;
         width: 100%;
     }
-    
     .logoImage {
         max-width: 200px;
         max-height: 100px;
         padding: 15px;
     }
-    
     .navMenuContainer {
         display: none;
     }
@@ -101,19 +100,14 @@
         width: 100%;
         padding: 30px 0px;
     }
-    
-
-    
     .signUpBtn {
         display: none;
     }
-
     .burgerMenu {
         display: block;
         margin-left: auto;
         margin-right: 70px;
     }
-
     .responsiveSignUpBtn {
         height: 70px;
         font-size: 1.5rem;
@@ -121,29 +115,24 @@
         border: 0;
         transition: all ease-in-out 0.3s;
     }
-
     .responsiveSignUpBtn:hover {
         color: white;
         background-color: black;
     }
-
     .responsiveSignUpBtn:active {
         font-size: 1.4rem;
     }
-
     .fa-x {
         color: white;
         scale: 2;
         transition: all ease-in-out 0.3s;
         margin-right: 2px;
     }
-
     .fa-bars {
         color: white;
         scale: 2;
         transition: all ease-in 0.3s;
     }
-
     .slideIn {
         display: flex;
         flex-direction: column;
@@ -156,23 +145,20 @@
         background-color: black;
         z-index: 5;
     }
-
     .slideIn {
         animation-name: slide-in;
         animation-duration: 0.7s;
         animation-timing-function: ease-out;
         animation-fill-mode: both;
     }
-      
     @keyframes slide-in {
         from {
-          transform: translateX(100%);
+            transform: translateX(100%);
         }
         to {
-          transform: translateX(0);
+            transform: translateX(0);
         }
     }
-
 }
 
 @media (max-width: 450px) {
