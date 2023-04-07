@@ -1,4 +1,61 @@
 body {
-    margin: 0;
     background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.backgroundImage {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    z-index: -5;
+}
+
+.quoteContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80vw;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+}
+
+.quoteText {
+    max-width: 75vw;
+    text-align: center;
+}
+
+.quoteAuthor {
+    text-decoration: underline;
+}
+
+.generateQuoteBtn {
+    background-color: white;
+    border: 1px solid black;
+    width: 10vw;
+    height: 5vh;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.generateQuoteBtn:hover {
+    color: white;
+    background-color: black;
+    border: 0;
 }
