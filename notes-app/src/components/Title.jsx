@@ -1,14 +1,14 @@
 import React from 'react'
 
 const Title = (props) => {
-
+    const toggle = props.toggle;
     const buttonStyle = {
-        "color": props.toggle ? "black" : "white",
-        "backgroundColor": props.toggle ? "white" : "rgb(7, 14, 24)"
+        "color": toggle ? "black" : "white",
+        "backgroundColor": toggle ? "white" : "rgb(7, 14, 24)"
     }
 
     const titleStyle = {
-        "color": props.toggle ? "white" : "rgb(7, 14, 24)",
+        "color": toggle ? "white" : "rgb(7, 14, 24)",
     }
 
     return (
@@ -18,7 +18,7 @@ const Title = (props) => {
                 className='modeToggleButton'
                 onClick={props.changeAppearanceMode}
                 style={buttonStyle}
-            >Toggle Mode</button>
+            >{toggle ? "Light" : "Dark"} Mode</button>
         </div>
     )
 }

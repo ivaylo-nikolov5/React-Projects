@@ -1,11 +1,10 @@
 body {
     margin: 0;
     padding: 0;
-    margin-left: 5vw;
-    margin-right: 5vw;
     background-color: rgb(7, 14, 24);
     font-family: 'Poppins', sans-serif;
     transition: all ease-in-out 0.3s;
+    overflow-x: hidden;
 }
 
 .appContainer {
@@ -13,6 +12,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 .title {
@@ -51,4 +52,23 @@ body {
 
 .modeToggleButton:hover {
     opacity: 0.7;
+}
+
+.delimiter {
+    margin-left: 0;
+    margin-right: 0;
+    width: 99vw;
+    margin-top: 19px;
+    border: 1px solid;
+    transition: all ease-in-out 0.3s;
+}
+
+.notesContainer {
+    margin-top: 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 20px;
+    box-sizing: border-box;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: start;
 }

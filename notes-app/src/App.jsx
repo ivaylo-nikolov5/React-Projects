@@ -2,6 +2,7 @@ import {React, useState, useEffect} from 'react';
 import './css/App.css';
 import Title from './components/Title';
 import Searchbar from './components/Searchbar';
+import Note from "./components/Note";
 
 let appearance = {
     "textColor": "white",
@@ -42,6 +43,14 @@ function App() {
                     value={value}
                     setValue={setValue}
                 />
+
+            <hr className='delimiter' style={{"border-color": toggle ? "white" : "rgb(7, 14, 24)"}}/>
+
+            <div className='notesContainer'>
+                <Note 
+                    toggle={toggle}
+                />
+            </div>
         </div>
     );
 }
