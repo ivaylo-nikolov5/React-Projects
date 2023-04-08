@@ -1,6 +1,7 @@
 import {React, useState, useEffect} from 'react';
-import './App.css';
+import './css/App.css';
 import Title from './components/Title';
+import Searchbar from './components/Searchbar';
 
 let appearance = {
     "textColor": "white",
@@ -9,6 +10,7 @@ let appearance = {
 
 function App() {
     const [toggle, setToggle] = useState(true);
+    const [value, setValue] = useState("");
 
     useEffect(() => {
         Object.keys(appearance).forEach(key => {
@@ -23,6 +25,7 @@ function App() {
         appearance.backgroundColor = toggle ? "white" : "rgb(7, 14, 24)";
     }
 
+
     return (
         <div
             className='appContainer'
@@ -30,8 +33,15 @@ function App() {
             <div className='title'>
                 <Title
                     changeAppearanceMode={changeAppearanceMode}
+                    toggle={toggle}
                 />
             </div>
+
+            <Searchbar 
+                    toggle={toggle}
+                    value={value}
+                    setValue={setValue}
+                />
         </div>
     );
 }
