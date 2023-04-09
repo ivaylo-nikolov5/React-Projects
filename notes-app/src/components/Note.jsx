@@ -16,7 +16,7 @@ const Note = (props) => {
             <div className='noteInfo'>
                 <p className='noteDate'>{date.getDate()}/{date.getMonth() + 1}/{date.getFullYear()}</p>
                 <i 
-                    class="fa-solid fa-trash"
+                    className="fa-solid fa-trash"
                     onClick={0}
                 ></i>
             </div>

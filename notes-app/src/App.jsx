@@ -3,6 +3,7 @@ import './css/App.css';
 import Title from './components/Title';
 import Searchbar from './components/Searchbar';
 import Note from "./components/Note";
+import AddNote from './components/AddNote';
 
 let appearance = {
     "textColor": "white",
@@ -12,6 +13,8 @@ let appearance = {
 function App() {
     const [toggle, setToggle] = useState(true);
     const [value, setValue] = useState("");
+    const [notes, setNotes] = useState([]);
+    const [noteId, setNoteId] = useState(notes.length);
 
     useEffect(() => {
         Object.keys(appearance).forEach(key => {
@@ -26,6 +29,7 @@ function App() {
         appearance.backgroundColor = toggle ? "white" : "rgb(7, 14, 24)";
     }
 
+    console.log(notes);
 
     return (
         <div
@@ -44,11 +48,13 @@ function App() {
                     setValue={setValue}
                 />
 
-            <hr className='delimiter' style={{"border-color": toggle ? "white" : "rgb(7, 14, 24)"}}/>
+            <hr className='delimiter' style={{"bordeColor": toggle ? "white" : "rgb(7, 14, 24)"}}/>
 
             <div className='notesContainer'>
-                <Note 
-                    toggle={toggle}
+                <AddNote 
+                    noteId={noteId}
+                    setNoteId={setNoteId}
+                    setNotes={setNotes}
                 />
             </div>
         </div>

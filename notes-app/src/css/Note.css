@@ -1,6 +1,7 @@
 .noteContainer {
-    padding: 2vh 2vw;
+    padding: 1vh 1vw;
     width: 300px;
+    height: auto;
     border-radius: 4px;
     transition: all ease-in-out 0.3s;
 }
