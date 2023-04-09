@@ -15,6 +15,16 @@ function App() {
     const [value, setValue] = useState("");
     const [notes, setNotes] = useState([]);
     const [noteId, setNoteId] = useState(notes.length);
+    const notesAsComponents = notes.map((note, index) => {
+        return <Note
+            key={index}
+            toggle={toggle}
+            text={note.text}
+            deleteNote={deleteNote}
+            id={note.id}
+        />
+    })
+
 
     useEffect(() => {
         Object.keys(appearance).forEach(key => {
@@ -29,8 +39,22 @@ function App() {
         appearance.backgroundColor = toggle ? "white" : "rgb(7, 14, 24)";
     }
 
-    console.log(notes);
+    function deleteNote(index) {
+        setNotes(prevNotes => {
+            const newNotes = []
 
+            for (let note of prevNotes) {
+                if (note.id === index) {
+                    continue
+                } 
+
+                newNotes.push(note);
+            }
+            
+            
+            return newNotes
+        });
+    }
     return (
         <div
             className='appContainer'
@@ -48,9 +72,10 @@ function App() {
                     setValue={setValue}
                 />
 
-            <hr className='delimiter' style={{"bordeColor": toggle ? "white" : "rgb(7, 14, 24)"}}/>
+            <hr className='delimiter' style={{"borderColor": toggle ? "white" : "rgb(7, 14, 24)"}}/>
 
             <div className='notesContainer'>
+                {notesAsComponents}
                 <AddNote 
                     noteId={noteId}
                     setNoteId={setNoteId}
