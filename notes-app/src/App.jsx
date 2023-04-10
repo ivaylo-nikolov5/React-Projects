@@ -4,6 +4,7 @@ import Title from './components/Title';
 import Searchbar from './components/Searchbar';
 import Note from "./components/Note";
 import AddNote from './components/AddNote';
+import {useCookies} from 'react-cookie';
 
 let appearance = {
     "textColor": "white",
@@ -11,6 +12,7 @@ let appearance = {
 }
 
 function App() {
+    
     const [toggle, setToggle] = useState(true);
     const [value, setValue] = useState("");
     const [notes, setNotes] = useState([]);
@@ -42,6 +44,17 @@ function App() {
             id={note.id}
         />
     })
+
+    useEffect(() => {
+        const storedData = localStorage.getItem('notes');
+        if (storedData) {
+            setNotes(JSON.parse(storedData));
+        }
+      }, []);
+    
+      useEffect(() => {
+        localStorage.setItem('notes', JSON.stringify(notes));
+      }, [notes]);
 
     useEffect(() => {
         Object.keys(appearance).forEach(key => {
