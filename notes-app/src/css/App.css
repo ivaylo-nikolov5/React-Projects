@@ -67,9 +67,33 @@ body {
     margin-top: 20px;
     box-sizing: border-box;
     display: grid;
-    row-gap: 50px;
+    row-gap: 40px;
     box-sizing: border-box;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: start;
     width: 80vw;
+    transition: all ease-in-out 0.3s;
+}
+
+@media (max-width: 1800px) {
+    .notesContainer {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 30px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .notesContainer {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .notesContainer {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+        column-gap: 20px;
+    }
 }
