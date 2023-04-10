@@ -69,7 +69,7 @@ body {
     display: grid;
     row-gap: 50px;
     box-sizing: border-box;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: start;
     width: 80vw;
 }

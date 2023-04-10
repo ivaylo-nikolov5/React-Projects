@@ -25,12 +25,29 @@ function App() {
         />
     })
 
+    const filteredNotes = [];
+    
+    notes.forEach(note => {
+            if (note.text.includes(value) && value.trim() !== "") {
+                filteredNotes.push(note);
+            }
+    })
+
+    const filteredNotesAsComponents = filteredNotes.map((note, index) => {
+        return <Note
+            key={index}
+            toggle={toggle}
+            text={note.text}
+            deleteNote={deleteNote}
+            id={note.id}
+        />
+    })
 
     useEffect(() => {
         Object.keys(appearance).forEach(key => {
           document.body.style[key] = appearance[key];
         });
-      }, [toggle]);
+    }, [toggle]);
 
     function changeAppearanceMode () {
         setToggle(prevState => !prevState);
@@ -38,6 +55,9 @@ function App() {
         appearance.color = toggle ? "black" : "white";
         appearance.backgroundColor = toggle ? "white" : "rgb(7, 14, 24)";
     }
+
+   
+
 
     function deleteNote(index) {
         setNotes(prevNotes => {
@@ -75,7 +95,7 @@ function App() {
             <hr className='delimiter' style={{"borderColor": toggle ? "white" : "rgb(7, 14, 24)"}}/>
 
             <div className='notesContainer'>
-                {notesAsComponents}
+                {value.trim() === "" ? notesAsComponents : filteredNotesAsComponents}
                 <AddNote 
                     noteId={noteId}
                     setNoteId={setNoteId}
