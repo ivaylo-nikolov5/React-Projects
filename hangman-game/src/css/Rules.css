@@ -1,0 +1,43 @@
+.rulesContainer {
+    position: absolute;
+    top: 15vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    background-color: rgb(7, 18, 35);
+    padding: 20px;
+    box-shadow: 2px 3px 9px white;
+    border-radius: 20px;
+    width: 40vw;
+}
+
+.rulesHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rulesTitle {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.fa-x {
+    justify-self: end;
+    scale: 1.5;
+}
+
+.rules {
+    font-size: 1.2rem;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.rules li {
+    margin-top: 2px;
+    margin-bottom: 3px;
+}

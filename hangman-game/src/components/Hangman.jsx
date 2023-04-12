@@ -15,6 +15,16 @@ const Hangman = (props) => {
         ctx.strokeStyle = "#FFFFFF";
         ctx.imageSmoothingEnabled = true;
 
+        drawScaffold(ctx)
+        drawVerticalBar(ctx)
+        drawHorizontalBar(ctx)
+        drawHead(ctx)
+        drawBody(ctx)
+        drawLeftArm(ctx)
+        drawRightArm(ctx)
+        drawLeftLeg(ctx)
+        drawRightLeg(ctx)
+
         const drawOrder = {
             0: () => {return},
             1: drawScaffold,
@@ -42,8 +52,8 @@ const Hangman = (props) => {
         <div className='hangmanContainer'>
             <canvas
                 ref={canvasRef}
-                width="300"
-                height="300"
+                width="400"
+                height="400"
             />
         </div>
     )
