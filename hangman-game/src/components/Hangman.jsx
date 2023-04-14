@@ -3,6 +3,7 @@ import { drawScaffold, drawVerticalBar, drawHorizontalBar, drawHead,
         drawBody, drawLeftArm, drawRightArm, drawLeftLeg, drawRightLeg } from "../data/drawHangman";
 
 import "../css/Hangman.css";
+import { faI } from '@fortawesome/free-solid-svg-icons';
 
 const Hangman = (props) => {
     const canvasRef = useRef(null);
@@ -20,8 +21,7 @@ const Hangman = (props) => {
                     ctx.beginPath();
                     ctx.moveTo(137, 550);
                     ctx.lineTo(237, 550);
-                    ctx.stroke();
-                },
+                    ctx.stroke();},
             1: drawScaffold,
             2: drawVerticalBar,
             3: drawHorizontalBar,
@@ -33,8 +33,11 @@ const Hangman = (props) => {
             9: drawRightLeg
         }
         
+        if (fails >= 9) {
+            props.setFailed(true);
+            ctx.clearRect(0, 0, ctx.width, ctx.height);
+        }
         drawOrder.hasOwnProperty(fails) ?  drawOrder[fails](ctx) : props.setFailed(true);
-        
     };
     
     useEffect(() => {

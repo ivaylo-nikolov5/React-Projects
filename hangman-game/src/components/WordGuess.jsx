@@ -15,7 +15,7 @@ const WordGuess = (props) => {
         return () => {
             document.removeEventListener("keydown", guessLetter);
         };
-    }, [topic])
+    }, [])
 
     useEffect(() => {
         const randN = Math.floor(Math.random() * 6);
@@ -29,8 +29,8 @@ const WordGuess = (props) => {
     }, [])
 
     function guessLetter(event) {
+
         const val = event.key;
-    
         if (guessedLetters.includes(val)) {
             alert("You have already found this letter!");
             return;

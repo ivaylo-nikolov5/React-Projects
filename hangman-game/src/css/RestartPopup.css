@@ -1,0 +1,43 @@
+.restartPopupContainer {
+    position: absolute;
+    top: 15vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgb(7, 18, 35);
+    padding: 20px;
+    box-shadow: 2px 3px 9px white;
+    border-radius: 20px;
+    width: 40vw;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conditionMessage {
+    margin-top: 3vh;
+    margin-bottom: 12vh;
+}
+
+.retryText {
+    margin-bottom: 7vh;
+}
+
+.retryBtn {
+    width: 120px;
+    height: 40px;
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.retryBtn:hover {
+    border: 1px solid white;
+    color: white;
+    background-color: rgb(7, 18, 35);
+}
