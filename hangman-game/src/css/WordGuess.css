@@ -1,0 +1,18 @@
+.wordsGuessContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.topic {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 27vh;
+}
+
+.dashedWord {
+    font-size: 3rem;
+    letter-spacing: 10px;
+}

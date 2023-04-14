@@ -50,3 +50,14 @@
     align-items: center;
     overflow-x: hidden;
 }
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 15vw;
+    height: 50vh;
+    width: 100%;
+}

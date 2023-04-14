@@ -1,6 +1,6 @@
 import {React, useEffect, useRef} from 'react';
 import { drawScaffold, drawVerticalBar, drawHorizontalBar, drawHead, 
-        drawBody, drawLeftArm, drawRightArm, drawLeftLeg, drawRightLeg } from "../drawHangman";
+        drawBody, drawLeftArm, drawRightArm, drawLeftLeg, drawRightLeg } from "../data/drawHangman";
 
 import "../css/Hangman.css";
 
@@ -15,18 +15,13 @@ const Hangman = (props) => {
         ctx.strokeStyle = "#FFFFFF";
         ctx.imageSmoothingEnabled = true;
 
-        drawScaffold(ctx)
-        drawVerticalBar(ctx)
-        drawHorizontalBar(ctx)
-        drawHead(ctx)
-        drawBody(ctx)
-        drawLeftArm(ctx)
-        drawRightArm(ctx)
-        drawLeftLeg(ctx)
-        drawRightLeg(ctx)
-
         const drawOrder = {
-            0: () => {return},
+            0: () => {
+                    ctx.beginPath();
+                    ctx.moveTo(137, 550);
+                    ctx.lineTo(237, 550);
+                    ctx.stroke();
+                },
             1: drawScaffold,
             2: drawVerticalBar,
             3: drawHorizontalBar,
@@ -37,7 +32,7 @@ const Hangman = (props) => {
             8: drawLeftLeg,
             9: drawRightLeg
         }
-
+        
         drawOrder.hasOwnProperty(fails) ?  drawOrder[fails](ctx) : props.setFailed(true);
         
     };

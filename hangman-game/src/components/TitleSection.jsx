@@ -6,11 +6,13 @@ const TitleSection = (props) => {
 
     return (
         <div className='titleSection'>
-            <h1 className='mainPageTitle'>Hangman</h1>
+           {showRules ? "" :  <h1 className='mainPageTitle'>Hangman</h1>}
+            {showRules ? "" : 
             <button 
                 className='rulesBtn'
                 onClick={() => {props.setRulesShown(prevState => !prevState)}}
-            >RULES</button> 
+            >RULES</button> }
+            
             {showRules ? <Rules 
                 setRulesShown={props.setRulesShown}
             /> : ""}       
